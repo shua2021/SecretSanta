@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Secret Santa </title>
+
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel = "stylesheet" href = "test.css"> 
+</head>
+
+
+
+<body>
+    <h1 class = "large"> 
+        Secret Santa
+    </h1>
+
+    <table class = "table" id = "smashTable"></table>
+
+
+    <div id = "generaltestarea">
+        <form> 
+            <input type = "text" name = "Name: " placeholder = "Enter name here" id = 'nameList'>
+            <input type = "submit" id = "nameListSubmit"> 
+            <input type = "button" id = "nameListClear" value = "Clear">
+        </form>
+        
+        <div id = 'nameListResult'></div>
+
+        <form> 
+            <input type = "text" name = "Name: " placeholder = "Enter name here" id = "nameInput"> 
+            <input type = "submit" id = "nameSubmit"> 
+            <input type = "button" id = "nameClear" value = "Clear">
+        </form>
+    </div>
+
+    <div id = 'nameResult'></div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="secretSanta.js" type="module"></script>
+</body>
+
+</html>
